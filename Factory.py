@@ -29,11 +29,11 @@ class Factory:
 
        @classmethod
        def createPerson(self, name, password):
-           if name=="Bob" and password=="123":
-               return Admin(name, password)
+            if name=="Bob" and password=="123":
+                return Admin(name, password)
 
-           if name=="Alice" and password=="678":
-               return Manager(name, password)
+            if name=="Alice" and password=="678":
+                return Manager(name, password)
                
             return Client(name, password)
 
